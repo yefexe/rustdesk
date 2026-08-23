@@ -1,3 +1,9 @@
+name: Patch config.rs
+        run: |
+          sed -i 's/pub const RENDEZVOUS_SERVERS: &[&str] = &\[""\];/pub const RENDEZVOUS_SERVERS: &[&str] = &["10.96.16.53"];/' libs/hbb_common/src/config.rs
+
+
+
 name: Flutter Nightly Build
 
 on:
